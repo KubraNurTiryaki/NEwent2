@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/enbuyuk"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:padding="20dp"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent"
+            tools:ignore="ExtraText">
+
+
+            <!--içerik-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/lisaicerik"
+                android:layout_height="match_parent"
+
+
+                >
+
+
+                <ImageView
+                    android:id="@+id/lisaFoto"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/lisa1" />
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/lisaFoto"
+                    android:text="default"
+
+                    android:textColor="@color/white" />
+
+
+                <TextView
+                    android:id="@+id/timeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/username"
+                    android:layout_toRightOf="@id/lisaFoto"
+                    android:text="13 dk önce"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/aciklama"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lisaFoto"
+                    android:layout_marginBottom="5dp"
+                    android:text="Hi from Seul"
+                    android:textColor="@color/white"></TextView>
+
+
+                <!--    <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/likebutton"
+                android:text="Like"
+                android:background="@drawable/like_before"
+
+
+                />-->
+
+                <!--
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:src="@drawable/like_before"
+
+
+                        android:layout_height="wrap_content"></ImageButton>
+                -->
+                <!--
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:drawableLeft="@drawable/like_before"
+                        android:text="Like"
+                        android:layout_below="@id/paylasimResmi"
+
+
+                        android:layout_height="wrap_content"></Button>
+                -->
+                <!--
+                <Button
+                    android:id="@+id/bezdumbutton"
+
+
+                    android:layout_width="wrap_content"
+                    android:drawableLeft="@drawable/ic_launcher_foreground"
+                    android:text="Lıke"
+                    android:layout_below="@id/paylasimResmi"
+                    android:layout_height="wrap_content"></Button>-->
+
+                <ImageButton
+                    android:id="@+id/LikeButtonLisa"
+
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/paylasimResmi"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/like_before" />
+
+                <ImageView
+                    android:id="@+id/paylasimResmi"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_below="@+id/aciklama"
+
+                    android:background="@drawable/blackpinkkonser"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/LikeButtonLisa"
+                    android:text="-------------------------------------------------------------------------------------------------"
+                    ></TextView>
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+            <!--içerik-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:id="@+id/fermanicerik"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/lisaicerik">
+
+
+
+
+
+                <ImageView
+                    android:id="@+id/fermanFoto"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/ferman" />
+
+                <TextView
+                    android:id="@+id/usernameFerman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/fermanFoto"
+                    android:text="default"
+
+                    android:textColor="@color/white" />
+
+
+                <TextView
+                    android:id="@+id/timeTextFerman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/usernameFerman"
+                    android:layout_toRightOf="@id/fermanFoto"
+                    android:text="17 dk önce"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/aciklamaFerman"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/fermanFoto"
+                    android:layout_marginBottom="5dp"
+                    android:text="Bir kadın çizecekmişim"
+                    android:textColor="@color/white"></TextView>
+
+                <ImageButton
+                    android:id="@+id/LikeButtonFerman"
+
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/paylasimResmiFerman"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/like_before" />
+
+                <ImageView
+                    android:id="@+id/paylasimResmiFerman"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_below="@+id/aciklamaFerman"
+
+                    android:background="@drawable/ferman_konser"></ImageView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/LikeButtonFerman"
+                    android:text="-------------------------------------------------------------------------------------------------"
+                    ></TextView>
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+            <!--içerik-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/fermanicerik">
+
+
+                <ImageView
+                    android:id="@+id/ronaldoFoto"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/ronaldo1" />
+
+                <TextView
+                    android:id="@+id/usernameRonaldo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/ronaldoFoto"
+                    android:text="default"
+
+                    android:textColor="@color/white" />
+
+
+                <TextView
+                    android:id="@+id/timeTextRonaldo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/usernameRonaldo"
+                    android:layout_toRightOf="@id/ronaldoFoto"
+                    android:text="29 dk önce"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/aciklamaRonaldo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/ronaldoFoto"
+                    android:layout_marginBottom="5dp"
+                    android:text="Katar'da yapılacak olan kendi çapımızdaki maçımıza sizi de bekliyoruz"
+                    android:textColor="@color/white"></TextView>
+
+
+
+                <ImageButton
+                    android:id="@+id/LikeButtonRonaldo"
+
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/paylasimResmiRonaldo"
+                    android:layout_weight="1"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/like_before" />
+
+                <ImageView
+                    android:id="@+id/paylasimResmiRonaldo"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_below="@+id/aciklamaRonaldo"
+
+                    android:background="@drawable/katar"></ImageView>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_below="@id/LikeButtonRonaldo"
+                    android:text="-------------------------------------------------------------------------------------------------"
+                    ></TextView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
