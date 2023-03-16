@@ -3,8 +3,6 @@ package com.knt.newent2;
 //<!--Activity Classlar ekranı temsil eder-->
 
 
-
-
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -18,13 +16,15 @@ import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import io.realm.Realm;
+
 
 public class MainActivity extends AppCompatActivity {
-
+    Realm realm;
 
     Button btn1;
     ImageButton btn2;
-    TextView username,password;
+    TextView username, password;
 
     String malmi;
 
@@ -35,26 +35,31 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        tanimlamaUsername("Nasıl yapıcaz abla onu be BASEL");
+
+
+
 
 
     }
+
+
+    public void RealmTanimla(){
+        realm = Realm.getDefaultInstance();
+    }
+
+
+
 
     /*private void tanimla1() {
         btn1 = (Button) findViewById(R.id.bezdumbutton);
     }*/
 
     private void tanimla2() {
-        btn2 = (ImageButton) findViewById(R.id.LikeButtonLisa);
+        btn2 =  findViewById(R.id.LikeButtonLisa);
     }
 
     private void islevVer() {
-        btn1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                System.out.println("turuncu buton tıklandı");
-            }
-        });
+        btn1.setOnClickListener(v -> System.out.println("turuncu buton tıklandı"));
 
 
     }
@@ -72,10 +77,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void tanimlamaUsername(String username) {
 
-        this.username = (TextView) findViewById(R.id.username);
+        this.username = findViewById(R.id.username);
         this.username.setText(username);
-
-
 
 
     }
