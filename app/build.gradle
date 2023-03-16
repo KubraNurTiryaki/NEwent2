@@ -1,7 +1,7 @@
 plugins {
     id 'com.android.application'
 }
-
+apply plugin: "realm-android"
 android {
     namespace 'com.knt.newent2'
     compileSdk 33
