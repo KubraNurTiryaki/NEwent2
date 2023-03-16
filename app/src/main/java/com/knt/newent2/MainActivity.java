@@ -34,16 +34,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
-
-
+        RealmTanimla();
 
 
     }
 
 
-    public void RealmTanimla(){
+    public void RealmTanimla() {
         realm = Realm.getDefaultInstance();
     }
 
@@ -55,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     }*/
 
     private void tanimla2() {
-        btn2 =  findViewById(R.id.LikeButtonLisa);
+        btn2 = findViewById(R.id.LikeButtonLisa);
     }
 
     private void islevVer() {
